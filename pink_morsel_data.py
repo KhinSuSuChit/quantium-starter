@@ -1,18 +1,4 @@
-'''
-import csv
-with open('data/daily_sales_data_1.csv') as csvfile:
-    reader = csv.reader(csvfile)
-    line_count = 0
-    for row in reader:
-        if line_count == 0:
-            print("sales, date, region")
-            line_count += 1
-        else:
-            if row[0] == "pink morsel":
-                sales = float(row[1][1:]) * float(row[2])
-                print(f'{sales}, {row[3]}, {row[4]}')
-            line_count += 1
-            '''
+
 
 import pandas as pd
 
