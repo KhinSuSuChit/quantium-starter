@@ -19,14 +19,14 @@ region_colors = {
 }
 
 app.layout = html.Div(children=[
-    html.H1(children='Hello Dash'),
+    html.H1(children='Pink Morsel'),
 
     html.Div(children='''
         Pink Morsel Sales Dashboard
     '''),
 
     dcc.Graph(
-        id='sales-graph'
+        id='sales_graph'
     ),
     html.Div(
             dcc.RadioItems(
@@ -43,7 +43,7 @@ app.layout = html.Div(children=[
     ])
 
 @app.callback(
-    Output('sales-graph', 'figure'),
+    Output('sales_graph', 'figure'),
     Input('radio_items', 'value'),
 )
 
